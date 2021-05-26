@@ -8,6 +8,7 @@ Since then, cases have risen exponentially and numerous precautionary measures h
 ![download](https://user-images.githubusercontent.com/75640165/119728300-2691f100-be28-11eb-9dcd-3a74360577aa.jpg)
 ## Download Data
 The data for this repo comes from kaggle. You can visit the dataset here: https://www.kaggle.com/imdevskp/corona-virus-report 
+
 Note: The data used for this project includes cases from January 2020 to July 2020. The data is not very recent. 
 
 ## Data Specifics
