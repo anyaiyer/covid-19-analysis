@@ -24,4 +24,8 @@ Predictions for confirmed cases, recovered, deaths, and were made based on the d
 [Prophet](https://facebook.github.io/prophet/#:~:text=Prophet%20is%20a%20procedure%20for,daily%20seasonality%2C%20plus%20holiday%20effects.&text=Prophet%20is%20open%20source%20software,download%20on%20CRAN%20and%20PyPI.) is a forecasting tool from Facebook that uses data to predict future behavoir. Prophet gives a future trend to the data instead of just predictions.
 It makes forecasts based on irregular holidays and year, weekly, and daily seasonality.
 ## Use
+[Covid-19 Analysis](https://github.com/anyaiyer/covid-19-analysis/blob/main/Covid-19%20Analysis.ipynb) contains the main code.
 
+To view all the interactive plots, visit my [kaggle notebook](https://www.kaggle.com/anyaiyer/covid-19-visualization-predictions-prophet).
+
+Use of matplotlib, pandas, numpy, seaborn, scikit learn, tensorflow, fbprophet, and plotly is needed. Update to Python 3.5 is recommended.
