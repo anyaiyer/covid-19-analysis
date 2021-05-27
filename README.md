@@ -13,14 +13,15 @@ Note: The data used for this project includes cases from January 2020 to July 20
 
 ## Data Specifics
 4 csv files were used:
-- full_grouped.csv : day to day country wise number of cases (also includes county/state/province)
-- country_wise_latest.csv : latest number of cases in each country
-- worldometer_data.csv :  latest data from https://www.worldometers.info/
-- day_wise.csv : day wise number of cases without country level data
+- [full_grouped.csv](https://github.com/anyaiyer/covid-19-analysis/blob/main/full_grouped.csv) : day to day country wise number of cases (also includes county/state/province)
+- [country_wise_latest.csv](https://github.com/anyaiyer/covid-19-analysis/blob/main/country_wise_latest.csv) : latest number of cases in each country
+- [worldometer_data.csv](https://github.com/anyaiyer/covid-19-analysis/blob/main/worldometer_data.csv) :  latest data from https://www.worldometers.info/
+- [day_wise.csv](https://github.com/anyaiyer/covid-19-analysis/blob/main/day_wise.csv) : day wise number of cases without country level data
 
 (all information on the csv files is from the [kaggle dataset](https://www.kaggle.com/imdevskp/corona-virus-report))
 ## Model
 Predictions for confirmed cases, recovered, deaths, and were made based on the dataset. To make these predictions, I used Prophet.
 [Prophet](https://facebook.github.io/prophet/#:~:text=Prophet%20is%20a%20procedure%20for,daily%20seasonality%2C%20plus%20holiday%20effects.&text=Prophet%20is%20open%20source%20software,download%20on%20CRAN%20and%20PyPI.) is a forecasting tool from Facebook that uses data to predict future behavoir. Prophet gives a future trend to the data instead of just predictions.
 It makes forecasts based on irregular holidays and year, weekly, and daily seasonality.
+## Use
 
