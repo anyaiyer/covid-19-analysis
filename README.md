@@ -20,9 +20,25 @@ Note: The data used for this project includes cases from January 2020 to July 20
 
 (all information on the csv files is from the [kaggle dataset](https://www.kaggle.com/imdevskp/corona-virus-report))
 ## Model
-Predictions for confirmed cases, recovered, deaths, and were made based on the dataset. To make these predictions, I used Prophet.
-[Prophet](https://facebook.github.io/prophet/#:~:text=Prophet%20is%20a%20procedure%20for,daily%20seasonality%2C%20plus%20holiday%20effects.&text=Prophet%20is%20open%20source%20software,download%20on%20CRAN%20and%20PyPI.) is a forecasting tool from Facebook that uses data to predict future behavoir. Prophet gives a future trend to the data instead of just predictions.
-It makes forecasts based on irregular holidays and year, weekly, and daily seasonality.
+Predictions for confirmed cases, recovered, and deaths are based on the dataset. To make these predictions, I used Prophet.
+[Prophet](https://facebook.github.io/prophet/#:~:text=Prophet%20is%20a%20procedure%20for,daily%20seasonality%2C%20plus%20holiday%20effects.&text=Prophet%20is%20open%20source%20software,download%20on%20CRAN%20and%20PyPI.) is a forecasting tool from Facebook that predicts time series data. It gives a future trend to the data instead of just predictions. 
+Prophet makes forecasts based on irregular holidays and year, weekly, and daily seasonality. It automatically detects changes in trends by selecting points from the data. 
+
+Prophet's trend for confirmed, recovered, and death cases matched up accurately with the true values. 
+Values from the dataset are indicated with the black dots and the predicted trend is represented through the blue line. 
+
+Confirmed:
+
+<img width="768" alt="Screen Shot 2021-05-27 at 5 27 35 PM" src="https://user-images.githubusercontent.com/75640165/119912907-44875080-bf11-11eb-9f91-a8ca69fde643.png">
+
+Deaths:
+
+<img width="781" alt="Screen Shot 2021-05-27 at 5 27 44 PM" src="https://user-images.githubusercontent.com/75640165/119913340-8e246b00-bf12-11eb-80e0-bb325b5d6522.png">
+
+Recovered: 
+
+<img width="770" alt="Screen Shot 2021-05-27 at 5 28 09 PM" src="https://user-images.githubusercontent.com/75640165/119913361-9bd9f080-bf12-11eb-8825-3f5a173ecfec.png">
+
 ## Use
 [Covid-19 Analysis](https://github.com/anyaiyer/covid-19-analysis/blob/main/Covid-19%20Analysis.ipynb) contains the main code.
 
