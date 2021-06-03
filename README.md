@@ -44,4 +44,4 @@ Recovered:
 
 To view all the interactive plots, visit my [kaggle notebook](https://www.kaggle.com/anyaiyer/covid-19-visualization-predictions-prophet).
 
-Use of matplotlib, pandas, numpy, seaborn, scikit learn, tensorflow, fbprophet, and plotly is needed. Update to Python 3.5 is recommended.
+Use of matplotlib, pandas, numpy, seaborn, scikit learn, tensorflow, fbprophet, and plotly is needed. Update to Python 3.8 is recommended.
