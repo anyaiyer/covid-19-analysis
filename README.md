@@ -44,9 +44,9 @@ Recovered:
 
 
 
-My Neural Network model appeared to be converging to the minimum, but the mean squared error and mean absolute error were very high. Mean absolute percentage error and explained variance score was okay. This might be because the dataset (day_temp) only has 188 entries, affecting MSE and MAE. 
+My Neural Network model appeared to be converging to the minimum, but the root mean squared error and mean absolute error were very high. Mean absolute percentage error and explained variance score was okay. This might be because the dataset (day_temp) only has 188 entries, affecting MSE and MAE. 
 
-| Type | Mean Squared Error (MSE)| Mean Absolute Error MAE| Explained Variance score| Mean Absolute Percentage Error|
+| Type | Root Mean Squared Error (RMSE)| Mean Absolute Error (MAE)| Explained Variance score| Mean Absolute Percentage Error (MAPE)|
 |--|--|--|--|--|
 | Neural Network | ~ 2580990.190 | ~ 1830224.206|  ~ 0.745|~14.928|
 
