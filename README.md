@@ -24,6 +24,9 @@ Predictions for confirmed cases, recovered, and deaths are based on the dataset.
 [Prophet](https://facebook.github.io/prophet/#:~:text=Prophet%20is%20a%20procedure%20for,daily%20seasonality%2C%20plus%20holiday%20effects.&text=Prophet%20is%20open%20source%20software,download%20on%20CRAN%20and%20PyPI.) is a forecasting tool from Facebook that predicts time series data. It gives a future trend to the data instead of just predictions. 
 Prophet makes forecasts based on irregular holidays and year, weekly, and daily seasonality. It automatically detects changes in trends by selecting points from the data. 
 
+## Prophet vs. Neural Networks
+In this project, Prophet was easier to work with than Neural Networks and had better results.
+
 Prophet's trend for confirmed, recovered, and death cases matched up accurately with the true values. 
 Values from the dataset are indicated with the black dots and the predicted trend is represented through the blue line. 
 
@@ -39,8 +42,26 @@ Recovered:
 
 <img width="770" alt="Screen Shot 2021-05-27 at 5 28 09 PM" src="https://user-images.githubusercontent.com/75640165/119913361-9bd9f080-bf12-11eb-8825-3f5a173ecfec.png">
 
+
+
+My Neural Network model appeared to be converging to the minimum, but the mean squared error and mean absolute error were very high. Mean absolute percentage error and explained variance score was okay. This might be because the dataset (day_temp) only has 188 entries, affecting MSE and MAE. 
+
+| Type | Mean Squared Error (MSE)| Mean Absolute Error MAE| Explained Variance score| Mean Absolute Percentage Error|
+|--|--|--|--|--|
+| Neural Network | ~ 2580990.190 | ~ 1830224.206|  ~ 0.745|~14.928|
+
+Model Loss Plot:
+
+<img width="723" alt="Screen Shot 2021-06-03 at 4 46 39 PM" src="https://user-images.githubusercontent.com/75640165/120725653-4d38d300-c48b-11eb-9d36-1af9998e654d.png">
+
+Though both models had good performances, the Prophet model ultimately did better.
+
+
+
 ## Use
-[Covid-19 Analysis](https://github.com/anyaiyer/covid-19-analysis/blob/main/Covid-19%20Analysis.ipynb) contains the main code.
+[Covid-19 EDA](https://github.com/anyaiyer/covid-19-analysis/blob/main/Covid-19%20EDA.ipynb) contains all plots and visualizations.
+
+[Covid-19 Models](https://github.com/anyaiyer/covid-19-analysis/blob/main/Covid-19%20Models.ipynb) contains the code for the models.
 
 To view all the interactive plots, visit my [kaggle notebook](https://www.kaggle.com/anyaiyer/covid-19-visualization-predictions-prophet).
 
